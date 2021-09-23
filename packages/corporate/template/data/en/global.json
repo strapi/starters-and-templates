@@ -1,0 +1,131 @@
+{
+  "global": {
+    "id": 1,
+    "locale": "en",
+    "metaTitleSuffix": "Strapi Corporate",
+    "metadata": {
+      "id": 1,
+      "metaTitle": "Strapi starter for Corporate Sites",
+      "metaDescription": "Build your corporate site with Strapi",
+      "twitterCardType": "summary",
+      "twitterUsername": "strapijs",
+      "shareImage": null
+    },
+    "notificationBanner": {
+      "id": 1,
+      "text": "This page was built using the Strapi starter for Corporate Sites.\n[View other Strapi starters](https://strapi.io/starters)",
+      "type": "info"
+    },
+    "navbar": {
+      "id": 1,
+      "links": [
+        {
+          "id": 1,
+          "url": "/pricing",
+          "newTab": false,
+          "text": "Pricing"
+        },
+        {
+          "id": 3,
+          "url": "/contact",
+          "newTab": false,
+          "text": "Contact"
+        }
+      ],
+      "button": {
+        "id": 13,
+        "url": "#",
+        "newTab": false,
+        "text": "Sign up",
+        "type": "secondary"
+      },
+      "logo" : null
+    },
+    "footer": {
+      "id": 1,
+      "smallText": "© Copyright My Company™",
+      "columns": [
+        {
+          "id": 1,
+          "title": "Product",
+          "links": [
+            {
+              "id": 11,
+              "url": "#",
+              "newTab": false,
+              "text": "Features"
+            },
+            {
+              "id": 13,
+              "url": "#",
+              "newTab": false,
+              "text": "Sign up"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Legal",
+          "links": [
+            {
+              "id": 15,
+              "url": "#",
+              "newTab": false,
+              "text": "Privacy policy"
+            },
+            {
+              "id": 16,
+              "url": "#",
+              "newTab": false,
+              "text": "Terms & conditions"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Company",
+          "links": [
+            {
+              "id": 18,
+              "url": "#",
+              "newTab": false,
+              "text": "Careers"
+            },
+            {
+              "id": 21,
+              "url": "#",
+              "newTab": false,
+              "text": "Team"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Social",
+          "links": [
+            {
+              "id": 24,
+              "url": "#",
+              "newTab": false,
+              "text": "Twitter"
+            },
+            {
+              "id": 25,
+              "url": "#",
+              "newTab": false,
+              "text": "LinkedIn"
+            }
+          ]
+        }
+      ],
+      "logo": null
+    },
+    "favicon": null,
+    "localizations": [
+      {
+        "id": 2,
+        "locale": "fr"
+      }
+    ]
+  }
+}
