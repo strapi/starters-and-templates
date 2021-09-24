@@ -1,0 +1,28 @@
+{
+  "name": "@strapi/template-corporate",
+  "version": "0.0.1",
+  "description": "Strapi corporate template",
+  "main": "template.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strapi/templates.git"
+  },
+  "keywords": ["strapi", "template", "corporate"],
+  "author": {
+    "email": "hi@strapi.io",
+    "name": "Strapi team",
+    "url": "https://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strapi/templates/issues"
+  },
+  "homepage": "https://github.com/strapi/templates#readme"
+}
