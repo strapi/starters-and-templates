@@ -28,7 +28,6 @@ async function setPublicPermissions(newPermissions) {
   Object.keys(newPermissions).map(controller => {
     const actions = newPermissions[controller];
     const permissionsToCreate = actions.map(action => {
-      console.log(`preparing ${`api::${controller}.${controller}.${action}`}`);
       return strapi.query("plugin::users-permissions.permission").create({
         data: {
           action: `api::${controller}.${controller}.${action}`,
