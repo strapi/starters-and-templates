@@ -4,24 +4,11 @@ const fs = require("fs");
 const path = require("path");
 const mime = require("mime-types");
 const set = require("lodash.set");
+
 const {
   categories,
-  homepage,
-  writers,
-  articles,
-  global,
-} = require("../data/data.json");
-
-async function isFirstRun() {
-  const pluginStore = strapi.store({
-    environment: strapi.config.environment,
-    type: "type",
-    name: "setup",
-  });
-  const initHasRun = await pluginStore.get({ key: "initHasRun" });
-  await pluginStore.set({ key: "initHasRun", value: true });
-  return !initHasRun;
-}
+  products,
+} = require("../data/data");
 
 async function setPublicPermissions(newPermissions) {
   // Find the ID of the public role
@@ -50,6 +37,17 @@ async function setPublicPermissions(newPermissions) {
   await Promise.all(allPermissionsToCreate);
 }
 
+async function isFirstRun() {
+  const pluginStore = strapi.store({
+    environment: strapi.config.environment,
+    type: "type",
+    name: "setup",
+  });
+  const initHasRun = await pluginStore.get({ key: "initHasRun" });
+  await pluginStore.set({ key: "initHasRun", value: true });
+  return !initHasRun;
+}
+
 function getFileSizeInBytes(filePath) {
   const stats = fs.statSync(filePath);
   const fileSizeInBytes = stats["size"];
@@ -71,6 +69,7 @@ function getFileData(fileName) {
     type: mimeType,
   };
 }
+
 
 // Create an entry and attach files if there are any
 async function createEntry({ model, entry, files }) {
@@ -117,78 +116,38 @@ async function importCategories() {
   );
 }
 
-async function importHomepage() {
-  const files = {
-    "seo.shareImage": getFileData("default-image.png"),
-  };
-  await createEntry({ model: "homepage", entry: homepage, files });
-}
-
-async function importWriters() {
+async function importProducts() {
   return Promise.all(
-    writers.map(async (writer) => {
+    products.map(async (product) => {
       const files = {
-        picture: getFileData(`${writer.email}.jpg`),
+        picture: getFileData(`${product.slug}.png`),
       };
       return createEntry({
-        model: "writer",
-        entry: writer,
+        model: "product",
+        entry: product,
         files,
       });
     })
   );
-}
-
-async function importArticles() {
-  return Promise.all(
-    articles.map((article) => {
-      const files = {
-        image: getFileData(`${article.slug}.jpg`),
-      };
-
-      return createEntry({
-        model: "article",
-        entry: article,
-        files,
-      });
-    })
-  );
-}
-
-async function importGlobal() {
-  const files = {
-    favicon: getFileData("favicon.png"),
-    "defaultSeo.shareImage": getFileData("default-image.png"),
-  };
-  return createEntry({ model: "global", entry: global, files });
 }
 
 async function importSeedData() {
   // Allow read of application content types
   await setPublicPermissions({
-    global: ["find"],
-    homepage: ["find"],
-    article: ["find", "findOne"],
     category: ["find", "findOne"],
-    writer: ["find", "findOne"],
+    product: ["find", "findOne"],
   });
 
   // Create all entries
-  await importCategories();
-  await importHomepage();
-  await importWriters();
-  await importArticles();
-  await importGlobal();
+  await importCategories(categories);
+  await importProducts(products);
 }
 
 module.exports = async () => {
   const shouldImportSeedData = await isFirstRun();
-
   if (shouldImportSeedData) {
     try {
-      console.log("Setting up the template...");
       await importSeedData();
-      console.log("Ready to go");
     } catch (error) {
       console.log("Could not import seed data");
       console.error(error);
