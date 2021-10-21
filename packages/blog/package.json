@@ -28,8 +28,5 @@
       "url": "https://strapi.io"
     }
   ],
-  "main": "template.js",
-  "dependencies": {
-    "lodash.set": "^4.3.2"
-  }
+  "main": "template.js"
 }

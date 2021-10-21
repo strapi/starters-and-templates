@@ -1,11 +1,11 @@
 {
-  "name": "@strapi/template-corporate",
-  "version": "0.0.2",
-  "description": "Strapi corporate template",
+  "name": "@strapi/template-ecommerce",
+  "version": "0.0.1",
+  "description": "Strapi ecommerce template",
   "keywords": [
     "strapi",
     "template",
-    "corporate"
+    "ecommerce"
   ],
   "homepage": "https://github.com/strapi/templates#readme",
   "bugs": {
