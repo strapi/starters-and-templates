@@ -20,9 +20,10 @@
       "targetField": "name"
     },
     "products": {
-      "via": "categories",
-      "collection": "product",
-      "dominant": true
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "categories"
     }
   }
 }

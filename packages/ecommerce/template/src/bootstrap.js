@@ -3,6 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 const mime = require("mime-types");
+const set = require("lodash.set");
 
 const {
   categories,
@@ -133,8 +134,8 @@ async function importProducts() {
 async function importSeedData() {
   // Allow read of application content types
   await setPublicPermissions({
-    category: ["find", "findone"],
-    product: ["find", "findone"],
+    category: ["find", "findOne"],
+    product: ["find", "findOne"],
   });
 
   // Create all entries

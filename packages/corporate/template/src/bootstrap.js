@@ -200,7 +200,7 @@ async function importSeedData() {
   // Allow read of application content types
   await setPublicPermissions({
     global: ["find"],
-    page: ["find", "findone"],
+    page: ["find", "findOne"],
     "lead-form-submission": ["create"],
   });
 

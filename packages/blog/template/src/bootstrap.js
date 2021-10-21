@@ -168,9 +168,9 @@ async function importSeedData() {
   await setPublicPermissions({
     global: ["find"],
     homepage: ["find"],
-    article: ["find", "findone"],
-    category: ["find", "findone"],
-    writer: ["find", "findone"],
+    article: ["find", "findOne"],
+    category: ["find", "findOne"],
+    writer: ["find", "findOne"],
   });
 
   // Create all entries

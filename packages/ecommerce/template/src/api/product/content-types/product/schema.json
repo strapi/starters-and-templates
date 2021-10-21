@@ -27,20 +27,19 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
-        "images",
-        "videos"
+        "images"
       ],
-      "plugin": "upload",
-      "required": true
+      "plugin": "upload"
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
     },
     "categories": {
-      "collection": "category",
-      "via": "products"
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
     },
     "Custom_field": {
       "type": "component",
