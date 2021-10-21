@@ -1,0 +1,35 @@
+{
+  "name": "@strapi/template-blog",
+  "version": "0.0.1",
+  "description": "Strapi blog template",
+  "keywords": [
+    "strapi",
+    "template",
+    "blog"
+  ],
+  "homepage": "https://github.com/strapi/templates#readme",
+  "bugs": {
+    "url": "https://github.com/strapi/templates/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strapi/templates.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "https://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    }
+  ],
+  "main": "template.js",
+  "dependencies": {
+    "lodash.set": "^4.3.2"
+  }
+}
