@@ -22,8 +22,10 @@
       "required": true
     },
     "articles": {
-      "via": "category",
-      "collection": "article"
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "category"
     }
   }
 }

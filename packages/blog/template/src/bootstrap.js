@@ -3,6 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 const mime = require("mime-types");
+const set = require("lodash.set");
 const {
   categories,
   homepage,
@@ -74,11 +75,34 @@ function getFileData(fileName) {
 // Create an entry and attach files if there are any
 async function createEntry({ model, entry, files }) {
   try {
-    const createdEntry = await strapi.query(model).create(entry);
+    const createdEntry = await strapi.entityService.create(
+      `api::${model}.${model}`,
+      {
+        data: entry,
+      }
+    );
     if (files) {
-      await strapi.entityService.uploadFiles(createdEntry, files, {
-        model,
-      });
+      for (const [key, file] of Object.entries(files)) {
+        // Get file name without the extension
+        const [fileName] = file.name.split('.');
+        // Upload each individual file
+        const uploadedFile = await strapi
+          .plugin("upload")
+          .service("upload")
+          .upload({
+            files: file,
+            data: {
+              fileInfo: {
+                alternativeText: fileName,
+                caption: fileName,
+                name: fileName,
+              },
+            },
+          });
+
+        // Attach each file to its entry
+        set(entry, key, uploadedFile[0].id);
+      }
     }
   } catch (e) {
     console.log("model", entry, e);
@@ -115,46 +139,19 @@ async function importWriters() {
   );
 }
 
-// Randomly set relations on Article to avoid error with MongoDB
-function getEntryWithRelations(article, categories, authors) {
-  const isMongoose = strapi.config.connections.default.connector == "mongoose";
-
-  if (isMongoose) {
-    const randomRelation = (relation) =>
-      relation[Math.floor(Math.random() * relation.length)].id;
-    delete article.category.id;
-    delete article.author.id;
-
-    return {
-      ...article,
-      category: {
-        _id: randomRelation(categories),
-      },
-      author: {
-        _id: randomRelation(authors),
-      },
-    };
-  }
-
-  return article;
-}
-
 async function importArticles() {
-  const categories = await strapi.query("category").find();
-  const authors = await strapi.query("writer").find();
+  const categories = await strapi.query("api::category.category").findMany();
+  const authors = await strapi.query("api::writer.writer").findMany();
 
   return Promise.all(
     articles.map((article) => {
-      // Get relations for each article
-      const entry = getEntryWithRelations(article, categories, authors);
-
       const files = {
         image: getFileData(`${article.slug}.jpg`),
       };
 
       return createEntry({
         model: "article",
-        entry,
+        entry: article,
         files,
       });
     })

@@ -16,17 +16,19 @@
       "type": "string"
     },
     "picture": {
-      "model": "file",
-      "via": "related",
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos"
       ],
-      "plugin": "upload",
-      "required": false
+      "type": "media",
+      "multiple": false
     },
     "articles": {
-      "via": "author",
-      "collection": "article"
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "author"
     },
     "email": {
       "type": "string"
