@@ -148,7 +148,11 @@ async function importArticles() {
 
       return createEntry({
         model: "article",
-        entry: article,
+        entry: {
+          ...article,
+          // Make sure it's not a draft
+          publishedAt: Date.now(),
+        },
         files,
       });
     })

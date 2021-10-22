@@ -11,7 +11,7 @@
         }
       ],
       "shortName": "Home",
-      "status": "published",
+      "publishedAt":"2021-10-22T08:11:55.490Z",
       "metadata": {
         "id": 6,
         "metaTitle": "Strapi corporate site starter",
@@ -187,7 +187,7 @@
         }
       ],
       "shortName": "Pricing",
-      "status": "published",
+      "publishedAt":"2021-10-22T08:11:55.490Z",
       "metadata": {
         "id": 8,
         "metaTitle": "Pricing",
@@ -283,7 +283,6 @@
         }
       ],
       "shortName": "Secret",
-      "status": "draft",
       "metadata": {
         "id": 9,
         "metaTitle": "Page secrète",
@@ -311,7 +310,7 @@
         }
       ],
       "shortName": "Contact",
-      "status": "published",
+      "publishedAt":"2021-10-22T08:11:55.490Z",
       "metadata": {
         "id": 10,
         "metaTitle": "Nous Contacter",
