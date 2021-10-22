@@ -10,7 +10,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {
     "i18n": {
@@ -50,20 +50,6 @@
         "sections.pricing",
         "sections.lead-form"
       ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "published",
-        "draft"
-      ],
-      "default": "draft",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
