@@ -6,10 +6,10 @@ A Strapi template to create Strapi projects pre-configured for corporate apps.
 
 ```bash
 # Using Yarn
-yarn create strapi-app my-app-name --template https://github.com/strapi/strapi-template-corporate
+yarn create strapi-app my-app-name --template corporate
 
 # Or using NPM
-npx create-strapi-app my-app-name --template https://github.com/strapi/strapi-template-corporate
+npx create-strapi-app my-app-name --template corporate
 ```
 
 ## Starters

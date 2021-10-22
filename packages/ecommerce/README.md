@@ -6,10 +6,10 @@ A Strapi template to create Strapi projects pre-configured for e-commerce apps.
 
 ```bash
 # Using Yarn
-yarn create strapi-app my-app-name --template https://github.com/strapi/strapi-template-ecommerce
+yarn create strapi-app my-app-name --template ecommerce
 
 # Or using NPM
-npx create-strapi-app my-app-name --template https://github.com/strapi/strapi-template-ecommerce
+npx create-strapi-app my-app-name --template ecommerce
 ```
 
 ## Starters

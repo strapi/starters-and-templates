@@ -6,10 +6,10 @@ A Strapi template to create Strapi projects pre-configured for blog apps.
 
 ```bash
 # Using Yarn
-yarn create strapi-app my-app-name --template https://github.com/strapi/strapi-template-blog
+yarn create strapi-app my-app-name --template blog
 
 # Or using NPM
-npx create-strapi-app my-app-name --template https://github.com/strapi/strapi-template-blog
+npx create-strapi-app my-app-name --template blog
 ```
 
 ## Starters
