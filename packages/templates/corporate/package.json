@@ -7,14 +7,13 @@
     "template",
     "corporate"
   ],
-  "strapi": "^4.0.0",
-  "homepage": "https://github.com/strapi/templates#readme",
+  "homepage": "https://github.com/strapi/starters-and-templates#readme",
   "bugs": {
-    "url": "https://github.com/strapi/templates/issues"
+    "url": "https://github.com/strapi/starters-and-templates/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strapi/templates.git"
+    "url": "git+https://github.com/strapi/starters-and-templates.git"
   },
   "license": "MIT",
   "author": {

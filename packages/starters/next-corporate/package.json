@@ -1,11 +1,12 @@
 {
-  "name": "@strapi/template-ecommerce",
-  "version": "0.0.3",
-  "description": "Strapi ecommerce template",
+  "name": "@strapi/starter-next-corporate",
+  "version": "0.0.4",
+  "description": "Strapi corporate starter with Next.js",
   "keywords": [
     "strapi",
-    "template",
-    "ecommerce"
+    "starter",
+    "nextjs",
+    "corporate"
   ],
   "homepage": "https://github.com/strapi/starters-and-templates#readme",
   "bugs": {
@@ -27,7 +28,5 @@
       "email": "hi@strapi.io",
       "url": "https://strapi.io"
     }
-  ],
-  "main": "template.js",
-  "gitHead": "d6d5bd264d1df0a0f23b5234d84348f8d78882e3"
+  ]
 }

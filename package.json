@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "All Strapi templates",
-  "repository": "https://github.com/strapi/templates.git",
+  "repository": "https://github.com/strapi/starters-and-templates.git",
   "license": "MIT",
   "author": {
     "name": "Strapi team",
