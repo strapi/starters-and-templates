@@ -36,10 +36,7 @@ export async function fetchAPI(path, options = {}) {
  * @param {boolean} preview router isPreview value
  */
 export async function getPageData(params) {
-  const urlParams = qs.stringify({
-    ...params,
-    slug: params.slug.join("/"),
-  })
+  const urlParams = qs.stringify(params)
   // Find the pages that match this slug
   const pagesData = await fetchAPI(`/pages?${urlParams}`)
 
@@ -55,8 +52,11 @@ export async function getPageData(params) {
 // Get site data from Strapi (metadata, navbar, footer...)
 export async function getGlobalData(locale) {
   console.log("LOCALE", locale)
-  const global = await fetchAPI(
-    `/global?_locale=${locale}&populate=metadata.shareImage,favicon,notificationBanner,navbar.links,navbar.logo,navbar.links,footer.logo,footer.columns`
-  )
+  const urlParams = qs.stringify({
+    locale,
+    populate:
+      "metadata.shareImage,favicon,notificationBanner,navbar.links,navbar.logo,navbar.links,footer.logo,footer.columns",
+  })
+  const global = await fetchAPI(`/global?${urlParams}`)
   return global
 }
