@@ -1,14 +1,14 @@
 {
-  "name": "@strapi/starter-next-corporate",
+  "name": "@strapi/starter-next-blog",
   "version": "0.0.1",
-  "description": "Strapi corporate starter with Next.js",
+  "description": "Strapi blog starter with Next.js",
   "keywords": [
     "strapi",
     "starter",
     "nextjs",
-    "corporate"
+    "blog"
   ],
-  "homepage": "https://github.com/strapi/starters-and-templates/tree/main/packages/starters/next-corporate#readme",
+  "homepage": "https://github.com/strapi/starters-and-templates/tree/main/packages/starters/next-blog#readme",
   "bugs": {
     "url": "https://github.com/strapi/starters-and-templates/issues"
   },
