@@ -89,7 +89,7 @@ async function createEntry(model, entry, files) {
       }
     }
 
-    // Create the entity in Strapi
+    // Actually create the entry in Strapi
     const createdEntry = await strapi.entityService.create(
       `api::${model}.${model}`,
       {

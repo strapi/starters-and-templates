@@ -5,10 +5,7 @@ const path = require("path");
 const mime = require("mime-types");
 const set = require("lodash.set");
 
-const {
-  categories,
-  products,
-} = require("../data/data");
+const { categories, products } = require("../data/data");
 
 async function setPublicPermissions(newPermissions) {
   // Find the ID of the public role
@@ -22,9 +19,9 @@ async function setPublicPermissions(newPermissions) {
 
   // Create the new permissions and link them to the public role
   const allPermissionsToCreate = [];
-  Object.keys(newPermissions).map(controller => {
+  Object.keys(newPermissions).map((controller) => {
     const actions = newPermissions[controller];
-    const permissionsToCreate = actions.map(action => {
+    const permissionsToCreate = actions.map((action) => {
       return strapi.query("plugin::users-permissions.permission").create({
         data: {
           action: `api::${controller}.${controller}.${action}`,
@@ -70,20 +67,13 @@ function getFileData(fileName) {
   };
 }
 
-
 // Create an entry and attach files if there are any
 async function createEntry({ model, entry, files }) {
   try {
-    const createdEntry = await strapi.entityService.create(
-      `api::${model}.${model}`,
-      {
-        data: entry,
-      }
-    );
     if (files) {
       for (const [key, file] of Object.entries(files)) {
         // Get file name without the extension
-        const [fileName] = file.name.split('.');
+        const [fileName] = file.name.split(".");
         // Upload each individual file
         const uploadedFile = await strapi
           .plugin("upload")
@@ -103,6 +93,14 @@ async function createEntry({ model, entry, files }) {
         set(entry, key, uploadedFile[0].id);
       }
     }
+
+    // Actually create the entry in Strapi
+    const createdEntry = await strapi.entityService.create(
+      `api::${model}.${model}`,
+      {
+        data: entry,
+      }
+    );
   } catch (e) {
     console.log("model", entry, e);
   }
@@ -120,7 +118,7 @@ async function importProducts() {
   return Promise.all(
     products.map(async (product) => {
       const files = {
-        picture: getFileData(`${product.slug}.png`),
+        image: getFileData(`${product.slug}.png`),
       };
       return createEntry({
         model: "product",

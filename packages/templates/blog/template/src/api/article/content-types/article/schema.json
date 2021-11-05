@@ -39,8 +39,7 @@
     },
     "image": {
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ],
       "type": "media",
       "multiple": false

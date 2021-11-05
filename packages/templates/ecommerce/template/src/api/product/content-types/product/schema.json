@@ -24,12 +24,11 @@
       "type": "float"
     },
     "image": {
-      "model": "file",
-      "via": "related",
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload"
+      "type": "media",
+      "multiple": false
     },
     "slug": {
       "type": "uid",

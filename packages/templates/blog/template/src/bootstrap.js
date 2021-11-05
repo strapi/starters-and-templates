@@ -75,12 +75,6 @@ function getFileData(fileName) {
 // Create an entry and attach files if there are any
 async function createEntry({ model, entry, files }) {
   try {
-    const createdEntry = await strapi.entityService.create(
-      `api::${model}.${model}`,
-      {
-        data: entry,
-      }
-    );
     if (files) {
       for (const [key, file] of Object.entries(files)) {
         // Get file name without the extension
@@ -104,6 +98,14 @@ async function createEntry({ model, entry, files }) {
         set(entry, key, uploadedFile[0].id);
       }
     }
+
+    // Actually create the entry in Strapi
+    const createdEntry = await strapi.entityService.create(
+      `api::${model}.${model}`,
+      {
+        data: entry,
+      }
+    );
   } catch (e) {
     console.log("model", entry, e);
   }
