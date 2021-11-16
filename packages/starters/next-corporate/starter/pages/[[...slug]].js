@@ -38,9 +38,10 @@ export async function getStaticPaths(context) {
   const pages = await context.locales.reduce(
     async (currentPagesPromise, locale) => {
       const currentPages = await currentPagesPromise
-      const localePages = await fetchAPI(
-        `/pages?_locale=${locale}&fields=slug,locale`
-      )
+      const localePages = await fetchAPI("/pages", {
+        locale,
+        fields: ["slug", "locale"],
+      })
       return [...currentPages, ...localePages.data]
     },
     Promise.resolve([])
@@ -67,9 +68,19 @@ export async function getStaticProps(context) {
   const globalLocale = await getGlobalData(locale)
   // Fetch pages. Include drafts if preview mode is on
   const pageData = await getPageData({
-    [`filters[slug][$eq]`]: (!params.slug ? [""] : params.slug).join("/"),
-    populate: "*",
     locale,
+    filters: {
+      slug: (!params.slug ? [""] : params.slug).join("/"),
+    },
+    populate: {
+      metadata: {
+        populate: "*",
+      },
+      contentSections: {
+        populate: "*",
+      },
+      localizations: "*",
+    },
     publicationState: preview ? "preview" : "live",
   })
 

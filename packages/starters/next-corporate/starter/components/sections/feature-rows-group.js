@@ -4,6 +4,7 @@ import Video from "../elements/video"
 import CustomLink from "../elements/custom-link"
 
 const FeatureRowsGroup = ({ data }) => {
+  console.log("FEATURE", data)
   return (
     <div className="container flex flex-col gap-12 py-12">
       {data.features.map((feature, index) => (

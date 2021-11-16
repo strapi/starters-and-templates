@@ -7,20 +7,24 @@ export function getStrapiURL(path) {
 }
 
 // Helper to make GET requests to Strapi
-export async function fetchAPI(path, options = {}) {
-  const defaultOptions = {
+export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
+  // Merge default and user options
+  const mergedOptions = {
     headers: {
       "Content-Type": "application/json",
     },
-  }
-  const mergedOptions = {
-    ...defaultOptions,
     ...options,
   }
-  const requestUrl = `${getStrapiURL(`/api${path}`)}`
+
+  // Build request URL
+  const queryString = qs.stringify(urlParamsObject)
+  const requestUrl = `${getStrapiURL(`/api${path}${queryString ? `?${queryString}` : ''}`)}`
+
+  // Trigger API call
   console.log("FETCH", requestUrl)
   const response = await fetch(requestUrl, mergedOptions)
 
+  // Handle response
   if (!response.ok) {
     console.error(response.statusText)
     throw new Error(`An error occured please try again`)
@@ -36,9 +40,8 @@ export async function fetchAPI(path, options = {}) {
  * @param {boolean} preview router isPreview value
  */
 export async function getPageData(params) {
-  const urlParams = qs.stringify(params)
   // Find the pages that match this slug
-  const pagesData = await fetchAPI(`/pages?${urlParams}`)
+  const pagesData = await fetchAPI('/pages', params)
 
   // Make sure we found something, otherwise return null
   if (pagesData.data == null || pagesData.data.length === 0) {
@@ -51,12 +54,23 @@ export async function getPageData(params) {
 
 // Get site data from Strapi (metadata, navbar, footer...)
 export async function getGlobalData(locale) {
-  console.log("LOCALE", locale)
-  const urlParams = qs.stringify({
+  const global = await fetchAPI('/global', {
     locale,
-    populate:
-      "metadata.shareImage,favicon,notificationBanner,navbar.links,navbar.logo,navbar.links,footer.logo,footer.columns",
+    populate: {
+      metadata: {
+        populate: '*'
+      },
+      favicon: '*',
+      notificationBanner: {
+        populate: '*'
+      },
+      navbar: {
+        populate: '*',
+      },
+      footer: {
+        populate: '*',
+      }
+    }
   })
-  const global = await fetchAPI(`/global?${urlParams}`)
   return global
 }

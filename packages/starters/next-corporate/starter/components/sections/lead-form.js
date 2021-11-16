@@ -23,7 +23,7 @@ const LeadForm = ({ data }) => {
 
             try {
               setErrors({ api: null })
-              await fetchAPI("/lead-form-submissions", {
+              await fetchAPI("/lead-form-submissions", {}, {
                 method: "POST",
                 body: JSON.stringify({
                   email: values.email,
