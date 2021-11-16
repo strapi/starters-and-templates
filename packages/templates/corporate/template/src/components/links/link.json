@@ -2,6 +2,7 @@
   "collectionName": "components_links_links",
   "info": {
     "name": "Link",
+    "displayName": "Link",
     "icon": "link",
     "description": ""
   },

@@ -2,6 +2,7 @@
   "collectionName": "components_meta_metadata",
   "info": {
     "name": "Metadata",
+    "displayName": "Metadata",
     "icon": "robot"
   },
   "options": {},

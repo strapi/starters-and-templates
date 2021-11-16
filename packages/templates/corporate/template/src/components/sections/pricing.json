@@ -2,6 +2,7 @@
   "collectionName": "components_sections_pricings",
   "info": {
     "name": "Pricing",
+    "displayName": "Pricing",
     "icon": "dollar-sign"
   },
   "options": {},

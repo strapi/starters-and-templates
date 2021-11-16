@@ -2,6 +2,7 @@
   "collectionName": "components_slices_testimonials",
   "info": {
     "name": "Testimonial",
+    "displayName": "Testimonial",
     "icon": "user-check"
   },
   "options": {},

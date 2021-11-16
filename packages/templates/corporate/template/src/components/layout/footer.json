@@ -2,6 +2,7 @@
   "collectionName": "components_layout_footers",
   "info": {
     "name": "Footer",
+    "displayName": "Footer",
     "icon": "caret-square-down"
   },
   "options": {},

@@ -2,6 +2,7 @@
   "collectionName": "components_elements_plans",
   "info": {
     "name": "plan",
+    "displayName": "Pricing plan",
     "icon": "search-dollar"
   },
   "options": {},

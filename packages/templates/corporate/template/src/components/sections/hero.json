@@ -2,6 +2,7 @@
   "collectionName": "components_slices_heroes",
   "info": {
     "name": "Hero",
+    "displayName": "Hero",
     "icon": "heading"
   },
   "options": {},

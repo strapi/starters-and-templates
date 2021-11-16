@@ -2,6 +2,7 @@
   "collectionName": "components_layout_navbars",
   "info": {
     "name": "Navbar",
+    "displayName": "Navbar",
     "icon": "map-signs",
     "description": ""
   },

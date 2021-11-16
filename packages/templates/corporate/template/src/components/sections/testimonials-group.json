@@ -2,6 +2,7 @@
   "collectionName": "components_slices_testimonials_groups",
   "info": {
     "name": "TestimonialsGroup",
+    "displayName": "Testimonials group",
     "icon": "user-friends"
   },
   "options": {},
