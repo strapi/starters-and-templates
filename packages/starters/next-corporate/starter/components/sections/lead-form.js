@@ -23,13 +23,17 @@ const LeadForm = ({ data }) => {
 
             try {
               setErrors({ api: null })
-              await fetchAPI("/lead-form-submissions", {}, {
-                method: "POST",
-                body: JSON.stringify({
-                  email: values.email,
-                  location: data.location,
-                }),
-              })
+              await fetchAPI(
+                "/lead-form-submissions",
+                {},
+                {
+                  method: "POST",
+                  body: JSON.stringify({
+                    email: values.email,
+                    location: data.location,
+                  }),
+                }
+              )
             } catch (err) {
               setErrors({ api: err.message })
             }

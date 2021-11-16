@@ -18,7 +18,9 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
 
   // Build request URL
   const queryString = qs.stringify(urlParamsObject)
-  const requestUrl = `${getStrapiURL(`/api${path}${queryString ? `?${queryString}` : ''}`)}`
+  const requestUrl = `${getStrapiURL(
+    `/api${path}${queryString ? `?${queryString}` : ""}`
+  )}`
 
   // Trigger API call
   console.log("FETCH", requestUrl)
@@ -41,7 +43,7 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
  */
 export async function getPageData(params) {
   // Find the pages that match this slug
-  const pagesData = await fetchAPI('/pages', params)
+  const pagesData = await fetchAPI("/pages", params)
 
   // Make sure we found something, otherwise return null
   if (pagesData.data == null || pagesData.data.length === 0) {
@@ -54,23 +56,23 @@ export async function getPageData(params) {
 
 // Get site data from Strapi (metadata, navbar, footer...)
 export async function getGlobalData(locale) {
-  const global = await fetchAPI('/global', {
+  const global = await fetchAPI("/global", {
     locale,
     populate: {
       metadata: {
-        populate: '*'
+        populate: "*",
       },
-      favicon: '*',
+      favicon: "*",
       notificationBanner: {
-        populate: '*'
+        populate: "*",
       },
       navbar: {
-        populate: '*',
+        populate: "*",
       },
       footer: {
-        populate: '*',
-      }
-    }
+        populate: "*",
+      },
+    },
   })
   return global
 }

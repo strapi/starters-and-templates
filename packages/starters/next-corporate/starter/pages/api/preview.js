@@ -14,8 +14,8 @@ const preview = async (req, res) => {
   const pageData = await getPageData({
     filters: {
       locale,
-      slug: slugArray.join('/'),
-      publicationState: 'preview',
+      slug: slugArray.join("/"),
+      publicationState: "preview",
     },
   })
 
