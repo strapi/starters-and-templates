@@ -1,3 +1,6 @@
 {
-  "template": "@strapi/template-corporate"
+  "template": {
+    "name": "@strapi/template-corporate",
+    "version": "0.x.x"
+  }
 }
