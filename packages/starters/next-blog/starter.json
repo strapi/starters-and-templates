@@ -1,6 +1,6 @@
 {
   "template": {
     "name": "@strapi/template-blog",
-    "version": "0.x.x"
+    "version": "^0.0.6"
   }
 }
