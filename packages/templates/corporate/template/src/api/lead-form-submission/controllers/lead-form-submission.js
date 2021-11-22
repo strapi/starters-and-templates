@@ -1,8 +1,9 @@
 'use strict';
 
 /**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/concepts/controllers.html#core-controllers)
- * to customize this controller
+ *  lead-form-submission controller
  */
 
-module.exports = {};
+const { createCoreController } = require('@strapi/strapi').factories;
+
+module.exports = createCoreController('api::lead-form-submission.lead-form-submission');

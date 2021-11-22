@@ -1,8 +1,9 @@
 'use strict';
 
 /**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/concepts/services.html#core-services)
- * to customize this service
+ * lead-form-submission service.
  */
 
-module.exports = () => ({});
+const { createCoreService } = require('@strapi/strapi').factories;
+
+module.exports = createCoreService('api::lead-form-submission.lead-form-submission');
