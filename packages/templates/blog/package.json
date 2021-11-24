@@ -1,6 +1,6 @@
 {
   "name": "@strapi/template-blog",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Strapi blog template",
   "keywords": [
     "strapi",
