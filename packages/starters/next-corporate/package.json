@@ -1,6 +1,6 @@
 {
   "name": "@strapi/starter-next-corporate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Strapi corporate starter with Next.js",
   "keywords": [
     "strapi",
