@@ -17,7 +17,7 @@ const Article = ({ article, categories }) => {
   }
 
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories.data}>
       <Seo seo={seo} />
       <div
         id="banner"
@@ -59,7 +59,7 @@ const Article = ({ article, categories }) => {
 }
 
 export async function getStaticPaths() {
-  const articlesRes = await fetchAPI("/articles?fields=slug")
+  const articlesRes = await fetchAPI("/articles", { fields: ["slug"] })
 
   return {
     paths: articlesRes.data.map((article) => ({
@@ -72,13 +72,16 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const articlesRes = await fetchAPI(
-    `/articles?filters[slug][$eq]=${params.slug}&populate=*`
-  )
+  const articlesRes = await fetchAPI("/articles", {
+    filters: {
+      slug: params.slug,
+    },
+    populate: "*",
+  })
   const categoriesRes = await fetchAPI("/categories")
 
   return {
-    props: { article: articlesRes.data[0], categories: categories.data },
+    props: { article: articlesRes.data[0], categories: categoriesRes },
     revalidate: 1,
   }
 }

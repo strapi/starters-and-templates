@@ -15,13 +15,11 @@
       "required": true
     },
     "shareImage": {
-      "model": "file",
-      "via": "related",
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload",
-      "required": false
+      "type": "media",
+      "multiple": false
     }
   }
 }

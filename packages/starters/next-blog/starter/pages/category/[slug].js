@@ -10,12 +10,12 @@ const Category = ({ category, categories }) => {
   }
 
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories.data}>
       <Seo seo={seo} />
       <div className="uk-section">
         <div className="uk-container uk-container-large">
           <h1>{category.attributes.name}</h1>
-          <Articles articles={category.attributes.articles} />
+          <Articles articles={category.attributes.articles.data} />
         </div>
       </div>
     </Layout>
@@ -23,10 +23,10 @@ const Category = ({ category, categories }) => {
 }
 
 export async function getStaticPaths() {
-  const categoriesRes = await fetchAPI("/categories?fields=slug")
+  const categoriesRes = await fetchAPI("/categories", { fields: ["slug"] })
 
   return {
-    paths: categories.data.map((category) => ({
+    paths: categoriesRes.data.map((category) => ({
       params: {
         slug: category.attributes.slug,
       },
@@ -36,11 +36,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const category = (await fetchAPI(`/categories?slug=${params.slug}`)).data[0]
-  const categories = await fetchAPI("/categories")
+  const matchingCategories = await fetchAPI("/categories", {
+    filters: { slug: params.slug },
+    populate: {
+      articles: {
+        populate: "*",
+      },
+    },
+  })
+  const allCategories = await fetchAPI("/categories")
 
   return {
-    props: { category, categories },
+    props: {
+      category: matchingCategories.data[0],
+      categories: allCategories,
+    },
     revalidate: 1,
   }
 }
