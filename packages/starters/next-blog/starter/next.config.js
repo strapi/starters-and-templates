@@ -1,6 +1,11 @@
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   images: {
-    loader: "custom",
-    path: "/",
+    loader: "default",
+    domains: ["localhost"],
   },
 }
+
+module.exports = nextConfig
