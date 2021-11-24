@@ -26,7 +26,7 @@ export async function getStaticProps() {
     fetchAPI("/homepage", {
       populate: {
         hero: "*",
-        defaultSeo: { populate: "*" },
+        seo: { populate: "*" },
       },
     }),
   ])
