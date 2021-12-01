@@ -16,8 +16,6 @@ const Navbar = ({ navbar, pageContext }) => {
   const router = useRouter()
   const [mobileMenuIsShown, setMobileMenuIsShown] = useState(false)
 
-  console.log("navbar", navbar)
-
   return (
     <>
       {/* The actual navbar */}
