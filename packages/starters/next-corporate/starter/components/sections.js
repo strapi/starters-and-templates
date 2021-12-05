@@ -11,21 +11,21 @@ import LeadForm from "./sections/lead-form"
 
 // Map Strapi sections to section components
 const sectionComponents = {
-  "sections.hero": Hero,
-  "sections.large-video": LargeVideo,
-  "sections.feature-columns-group": FeatureColumnsGroup,
-  "sections.feature-rows-group": FeatureRowsGroup,
-  "sections.bottom-actions": BottomActions,
-  "sections.testimonials-group": TestimonialsGroup,
-  "sections.rich-text": RichText,
-  "sections.pricing": Pricing,
-  "sections.lead-form": LeadForm,
+  ComponentSectionsHero: Hero,
+  ComponentSectionsLargeVideo: LargeVideo,
+  ComponentSectionsFeatureColumnsGroup: FeatureColumnsGroup,
+  ComponentSectionsFeatureRowsGroup: FeatureRowsGroup,
+  ComponentSectionsBottomActions: BottomActions,
+  ComponentSectionsTestimonialsGroup: TestimonialsGroup,
+  ComponentSectionsRichText: RichText,
+  ComponentSectionsPricing: Pricing,
+  ComponentSectionsLeadForm: LeadForm,
 }
 
 // Display a section individually
 const Section = ({ sectionData }) => {
   // Prepare the component
-  const SectionComponent = sectionComponents[sectionData.__component]
+  const SectionComponent = sectionComponents[sectionData.__typename]
 
   if (!SectionComponent) {
     return null
@@ -66,7 +66,7 @@ const Sections = ({ sections, preview }) => {
       {sections.map((section) => (
         <Section
           sectionData={section}
-          key={`${section.__component}${section.id}`}
+          key={`${section.__typename}${section.id}`}
         />
       ))}
     </div>

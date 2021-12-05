@@ -6,7 +6,7 @@ import { mediaPropTypes } from "utils/types"
 const NextImage = ({ media, ...props }) => {
   const { url, alternativeText, width, height } = media.data.attributes
 
-  const loader = ({ src }) => {
+  const loader = ({ src, width }) => {
     return getStrapiMedia(src)
   }
 

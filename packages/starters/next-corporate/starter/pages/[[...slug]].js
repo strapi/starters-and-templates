@@ -23,10 +23,19 @@ const DynamicPage = ({ sections, metadata, preview, global, pageContext }) => {
     return <div className="container">Loading...</div>
   }
 
+  // Merge default site SEO settings with page specific SEO settings
+  if (metadata.shareImage?.data == null) {
+    delete metadata.shareImage
+  }
+  const metadataWithDefaults = {
+    ...global.attributes.metadata,
+    ...metadata,
+  }
+
   return (
     <Layout global={global} pageContext={pageContext}>
       {/* Add meta tags for SEO*/}
-      <Seo metadata={metadata} />
+      <Seo metadata={metadataWithDefaults} />
       {/* Display content sections */}
       <Sections sections={sections} preview={preview} />
     </Layout>
@@ -68,20 +77,9 @@ export async function getStaticProps(context) {
   const globalLocale = await getGlobalData(locale)
   // Fetch pages. Include drafts if preview mode is on
   const pageData = await getPageData({
+    slug: (!params.slug ? [""] : params.slug).join("/"),
     locale,
-    filters: {
-      slug: (!params.slug ? [""] : params.slug).join("/"),
-    },
-    populate: {
-      metadata: {
-        populate: "*",
-      },
-      contentSections: {
-        populate: "*",
-      },
-      localizations: "*",
-    },
-    publicationState: preview ? "preview" : "live",
+    preview,
   })
 
   if (pageData == null) {
@@ -93,7 +91,7 @@ export async function getStaticProps(context) {
   const { contentSections, metadata, localizations, slug } = pageData.attributes
 
   const pageContext = {
-    locale: pageData.attributes.locale,
+    locale,
     locales,
     defaultLocale,
     slug,
