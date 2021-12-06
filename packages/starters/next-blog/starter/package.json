@@ -1,6 +1,6 @@
 {
   "name": "my-next-blog",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "develop": "next dev",
