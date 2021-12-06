@@ -1,0 +1,32 @@
+{
+  "name": "@strapi/starter-next-blog",
+  "version": "0.0.8",
+  "description": "Strapi blog starter with Next.js",
+  "keywords": [
+    "strapi",
+    "starter",
+    "nextjs",
+    "blog"
+  ],
+  "homepage": "https://github.com/strapi/starters-and-templates/tree/main/packages/starters/next-blog#readme",
+  "bugs": {
+    "url": "https://github.com/strapi/starters-and-templates/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strapi/starters-and-templates.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "https://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    }
+  ]
+}

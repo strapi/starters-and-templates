@@ -1,0 +1,32 @@
+{
+  "name": "@strapi/template-ecommerce",
+  "version": "0.0.8",
+  "description": "Strapi ecommerce template",
+  "keywords": [
+    "strapi",
+    "template",
+    "ecommerce"
+  ],
+  "homepage": "https://github.com/strapi/starters-and-templates#readme",
+  "bugs": {
+    "url": "https://github.com/strapi/starters-and-templates/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strapi/starters-and-templates.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "https://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    }
+  ],
+  "gitHead": "d6d5bd264d1df0a0f23b5234d84348f8d78882e3"
+}

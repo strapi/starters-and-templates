@@ -1,0 +1,9 @@
+{
+  "package": {
+    "dependencies": {
+      "@strapi/plugin-graphql": "^4.0.0",
+      "lodash.set": "^4.3.2",
+      "mime-types": "^2.1.27"
+    }
+  }
+}

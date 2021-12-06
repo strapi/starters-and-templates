@@ -1,0 +1,26 @@
+{
+  "name": "@strapi/starters-and-templates",
+  "version": "1.0.0",
+  "private": true,
+  "description": "All Strapi templates",
+  "repository": "https://github.com/strapi/starters-and-templates.git",
+  "license": "MIT",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "https://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    }
+  ],
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
