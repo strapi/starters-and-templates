@@ -29,7 +29,6 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
   )}`
 
   // Trigger API call
-  console.log("FETCH", requestUrl)
   const response = await fetch(requestUrl, mergedOptions)
 
   // Handle response
