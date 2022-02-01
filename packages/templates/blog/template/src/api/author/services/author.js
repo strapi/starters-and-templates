@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * writer service.
+ * author service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::writer.writer');
+module.exports = createCoreService('api::author.author');
