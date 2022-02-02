@@ -1,0 +1,32 @@
+{
+  "name": "@strapi/starter-gatsby-blog",
+  "version": "1.0.0",
+  "description": "Strapi blog starter with Gatsby",
+  "keywords": [
+    "strapi",
+    "starter",
+    "gatsby",
+    "blog"
+  ],
+  "homepage": "https://github.com/strapi/starters-and-templates/tree/main/packages/starters/gatsby-blog#readme",
+  "bugs": {
+    "url": "https://github.com/strapi/starters-and-templates/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strapi/starters-and-templates.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "https://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    }
+  ]
+}
