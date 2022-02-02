@@ -16,7 +16,7 @@ const IndexPage = () => {
 
   return (
     <div>
-      <h1>Website</h1>
+      <h1 className="text-5xl font-bold">Website</h1>
       <ul>
         {allStrapiArticle.nodes.map((article) => (
           <li key={article.id}>{article.title}</li>

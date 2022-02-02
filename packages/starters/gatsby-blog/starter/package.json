@@ -18,15 +18,19 @@
   },
   "dependencies": {
     "gatsby": "^4.6.1",
+    "gatsby-plugin-postcss": "^5.6.0",
     "gatsby-source-strapi": "^1.0.2",
+    "postcss": "^8.4.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.18"
   }
 }

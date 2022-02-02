@@ -3,13 +3,10 @@ require("dotenv").config({
 })
 
 module.exports = {
-  siteMetadata: {
-    title: `Strapi Gatsby Blog`,
-    siteUrl: `https://www.yourdomain.tld`,
-  },
   plugins: [
+    "gatsby-plugin-postcss",
     {
-      resolve: `gatsby-source-strapi`,
+      resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
         accessToken: process.env.STRAPI_TOKEN,
