@@ -11,6 +11,13 @@ const IndexPage = () => {
           id
           slug
           title
+          cover {
+            localFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
         }
       }
     }
