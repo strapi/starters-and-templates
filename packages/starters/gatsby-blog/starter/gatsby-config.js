@@ -13,6 +13,14 @@ module.exports = {
         collectionTypes: [
           {
             singularName: "article",
+            queryParams: {
+              populate: {
+                cover: "*",
+                blocks: {
+                  populate: "*",
+                },
+              },
+            },
           },
           {
             singularName: "author",

@@ -8,17 +8,7 @@ const IndexPage = () => {
     query {
       allStrapiArticle {
         nodes {
-          id
-          slug
-          title
-          description
-          cover {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(aspectRatio: 1.77)
-              }
-            }
-          }
+          ...ArticleCard
         }
       }
     }

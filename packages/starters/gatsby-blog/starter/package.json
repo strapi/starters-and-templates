@@ -25,10 +25,12 @@
     "gatsby-transformer-sharp": "^4.6.0",
     "postcss": "^8.4.6",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-markdown": "^8.0.0"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.1",
     "autoprefixer": "^10.4.2",
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
