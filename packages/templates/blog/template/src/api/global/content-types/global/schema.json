@@ -8,7 +8,7 @@
     "description": "Define global settings"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
