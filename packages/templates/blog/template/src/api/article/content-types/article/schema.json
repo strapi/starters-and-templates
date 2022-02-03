@@ -4,8 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "article",
-    "description": ""
+    "displayName": "Article",
+    "description": "Create your blog content"
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +16,8 @@
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "maxLength": 80
     },
     "slug": {
       "type": "uid",

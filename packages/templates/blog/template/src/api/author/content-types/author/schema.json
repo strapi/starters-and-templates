@@ -4,8 +4,8 @@
   "info": {
     "singularName": "author",
     "pluralName": "authors",
-    "displayName": "author",
-    "description": ""
+    "displayName": "Author",
+    "description": "Create authors for your content"
   },
   "options": {
     "draftAndPublish": false

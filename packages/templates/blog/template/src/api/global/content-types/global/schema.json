@@ -4,8 +4,8 @@
   "info": {
     "singularName": "global",
     "pluralName": "globals",
-    "displayName": "global",
-    "description": ""
+    "displayName": "Global",
+    "description": "Define global settings"
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +14,7 @@
   "attributes": {
     "siteName": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "favicon": {
       "type": "media",
@@ -25,6 +25,9 @@
         "files",
         "videos"
       ]
+    },
+    "siteDescription": {
+      "type": "text"
     }
   }
 }

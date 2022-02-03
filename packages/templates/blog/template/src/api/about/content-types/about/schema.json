@@ -4,10 +4,11 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "about"
+    "displayName": "About",
+    "description": "Write about yourself and the content you create"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

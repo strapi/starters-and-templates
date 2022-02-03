@@ -99,26 +99,6 @@ async function createEntry({ model, entry }) {
   }
 }
 
-async function importCategories() {
-  for (const category of categories) {
-    await createEntry({ model: "category", entry: category });
-  }
-}
-
-async function importAuthors() {
-  for (const author of authors) {
-    const avatar = await checkFileExistsBeforeUpload([author.avatar]);
-
-    await createEntry({
-      model: "author",
-      entry: {
-        ...author,
-        avatar,
-      },
-    });
-  }
-}
-
 async function checkFileExistsBeforeUpload(files) {
   const existingFiles = [];
   const uploadedFiles = [];
@@ -219,6 +199,26 @@ async function importAbout() {
       publishedAt: Date.now(),
     },
   });
+}
+
+async function importCategories() {
+  for (const category of categories) {
+    await createEntry({ model: "category", entry: category });
+  }
+}
+
+async function importAuthors() {
+  for (const author of authors) {
+    const avatar = await checkFileExistsBeforeUpload([author.avatar]);
+
+    await createEntry({
+      model: "author",
+      entry: {
+        ...author,
+        avatar,
+      },
+    });
+  }
 }
 
 async function importSeedData() {
