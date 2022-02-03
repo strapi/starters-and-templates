@@ -11,7 +11,8 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: "2rem",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 }
