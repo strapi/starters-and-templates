@@ -11,10 +11,11 @@ const IndexPage = () => {
           id
           slug
           title
+          description
           cover {
             localFile {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData(aspectRatio: 1.77)
               }
             }
           }
