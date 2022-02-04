@@ -1,6 +1,12 @@
 {
   "global": {
     "siteName": "Strapi Blog",
+    "defaultSeo": {
+      "metaTitle": "Page",
+      "metaDescription": "A blog made with Strapi",
+      "shareImage": null
+    },
+    "siteDescription": "A Blog made with Strapi",
     "favicon": null
   },
   "about": {
@@ -104,7 +110,7 @@
       "author": {
         "id": 1
       },
-      "description": "Mantis shrimps, or stomatopods, are marine crustaceans of the order Stomatopoda. Some species have specialised calcified \"clubs\" that can strike with great power, while others have sharp forelimbs used to capture prey.",
+      "description": "Mantis shrimps, or stomatopods, are marine crustaceans of the order Stomatopoda.",
       "cover": null,
       "blocks": [
         {

@@ -79,7 +79,7 @@ async function uploadFile(file, name) {
       files: file,
       data: {
         fileInfo: {
-          alternativeText: name,
+          alternativeText: `An image uploaded to Strapi called ${name}`,
           caption: name,
           name,
         },
@@ -118,7 +118,8 @@ async function checkFileExistsBeforeUpload(files) {
     } else {
       // File doesn't exist, upload it
       const fileData = getFileData(fileName);
-      const [file] = await uploadFile(fileData, fileName);
+      const fileNameNoExtension = fileName.split('.').shift()
+      const [file] = await uploadFile(fileData, fileNameNoExtension);
       uploadedFiles.push(file);
     }
   }
@@ -177,12 +178,18 @@ async function importArticles() {
 
 async function importGlobal() {
   const favicon = await checkFileExistsBeforeUpload(["favicon.png"]);
-
+  const shareImage = await checkFileExistsBeforeUpload(["default-image.png"])
   return createEntry({
     model: "global",
     entry: {
       ...global,
       favicon,
+      // Make sure it's not a draft
+      publishedAt: Date.now(),
+      defaultSeo: {
+        ...global.defaultSeo,
+        shareImage
+      }
     },
   });
 }

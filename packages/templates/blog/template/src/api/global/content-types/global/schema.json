@@ -14,7 +14,7 @@
   "attributes": {
     "siteName": {
       "type": "string",
-      "required": false
+      "required": true
     },
     "favicon": {
       "type": "media",
@@ -27,7 +27,13 @@
       ]
     },
     "siteDescription": {
-      "type": "text"
+      "type": "text",
+      "required": true
+    },
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
