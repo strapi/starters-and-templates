@@ -11,7 +11,13 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        xs: "1rem",
+        sm: "2rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
     },
   },
   plugins: [
