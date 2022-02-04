@@ -37,8 +37,19 @@ export const query = graphql`
     __typename
     ... on STRAPI__COMPONENT_SHARED_RICH_TEXT {
       richTextBody: body {
+        __typename
         data {
-          body
+          id
+          childMarkdownRemark {
+            html
+          }
+        }
+        medias {
+          localFile {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
       }
     }
