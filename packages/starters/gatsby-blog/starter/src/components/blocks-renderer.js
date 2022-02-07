@@ -44,13 +44,6 @@ export const query = graphql`
             html
           }
         }
-        medias {
-          localFile {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
       }
     }
     ... on STRAPI__COMPONENT_SHARED_MEDIA {

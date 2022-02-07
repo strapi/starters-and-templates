@@ -35,6 +35,14 @@ module.exports = {
           },
           {
             singularName: "global",
+            queryParams: {
+              populate: {
+                favicon: "*",
+                defaultSeo: {
+                  populate: "*",
+                },
+              },
+            },
           },
         ],
       },

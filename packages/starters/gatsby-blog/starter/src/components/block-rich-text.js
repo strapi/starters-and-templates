@@ -9,10 +9,6 @@ const BlockRichText = ({ data }) => {
           __html: data.richTextBody.data.childMarkdownRemark.html,
         }}
       />
-      {/* TODO: Display images in the actual content */}
-      {data.richTextBody.medias.map((media) => (
-        <GatsbyImage image={getImage(media)} />
-      ))}
     </div>
   )
 }

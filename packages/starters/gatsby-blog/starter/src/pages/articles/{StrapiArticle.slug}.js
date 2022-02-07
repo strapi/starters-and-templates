@@ -12,6 +12,7 @@ const ArticlePage = ({ data }) => {
     metaTitle: article.title,
     metaDescription: article.description,
     shareImage: article.cover,
+    article: true,
   }
 
   return (

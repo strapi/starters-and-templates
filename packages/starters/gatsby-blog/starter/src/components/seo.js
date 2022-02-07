@@ -6,24 +6,32 @@ const SEO = ({ seo = {} }) => {
   const { strapiGlobal } = useStaticQuery(graphql`
     query {
       strapiGlobal {
+        siteName
         favicon {
           localFile {
             url
           }
         }
-        siteName
+        defaultSeo {
+          metaTitle
+          metaDescription
+          shareImage {
+            localFile {
+              url
+            }
+          }
+        }
       }
     }
   `)
 
-  const defaultSeo = {
-    metaTitle: strapiGlobal.siteName,
-  }
-
-  console.log(strapiGlobal.favicon.localFile.url)
+  const { siteName, defaultSeo, favicon } = strapiGlobal
 
   // Merge default and page-specific SEO values
   const fullSeo = { ...defaultSeo, ...seo }
+
+  // Add site name to title
+  fullSeo.metaTitle = `${fullSeo.metaTitle} | ${siteName}`
 
   const getMetaTags = () => {
     const tags = []
@@ -57,9 +65,7 @@ const SEO = ({ seo = {} }) => {
       )
     }
     if (fullSeo.shareImage) {
-      const imageUrl =
-        (process.env.GATSBY_ROOT_URL || "http://localhost:8000") +
-        fullSeo.shareImage.localFile.publicURL
+      const imageUrl = fullSeo.shareImage.localFile.url
       tags.push(
         {
           name: "image",
@@ -94,7 +100,7 @@ const SEO = ({ seo = {} }) => {
       link={[
         {
           rel: "icon",
-          href: strapiGlobal.favicon.localFile.url,
+          href: favicon.localFile.url,
         },
       ]}
       meta={metaTags}
