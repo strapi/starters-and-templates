@@ -14,6 +14,7 @@ const IndexPage = () => {
       }
       strapiGlobal {
         siteName
+        siteDescription
       }
     }
   `)
@@ -25,8 +26,8 @@ const IndexPage = () => {
         <h1 className="text-6xl font-bold text-neutral-700">
           {strapiGlobal.siteName}
         </h1>
-        <p className="mt-2 text-xl text-neutral-500">
-          A cool blog made with Gatsby and Strapi v4
+        <p className="mt-4 text-2xl text-neutral-500">
+          {strapiGlobal.siteDescription}
         </p>
       </header>
       <main>
