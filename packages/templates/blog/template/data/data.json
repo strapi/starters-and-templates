@@ -1,4 +1,32 @@
 {
+  "global": {
+    "siteName": "Strapi Blog",
+    "defaultSeo": {
+      "metaTitle": "Page",
+      "metaDescription": "A blog made with Strapi",
+      "shareImage": null
+    },
+    "siteDescription": "A Blog made with Strapi",
+    "favicon": null
+  },
+  "about": {
+    "title": "About the strapi blog",
+    "blocks": [
+      {
+        "__component": "shared.quote",
+        "title": "Thelonius Monk",
+        "body": "You gotta dig to dig it ya dig?"
+      },
+      {
+        "__component": "shared.rich-text",
+        "body": "Strapi is an amazing Headless CMS."
+      },
+      {
+        "__component": "shared.media",
+        "file": "coffee-art.jpg"
+      }
+    ]
+  },
   "categories": [
     {
       "name": "news",
@@ -21,32 +49,21 @@
       "slug": "story"
     }
   ],
-  "homepage": {
-    "seo": {
-      "metaTitle": "My personal Strapi blog",
-      "metaDescription": "Discover my SEO friendly blog built with Strapi.",
-      "shareImage": null
-    },
-    "hero": {
-      "title": "My blog"
-    }
-  },
-  "writers": [
+  "authors": [
     {
       "name": "David Doe",
       "email": "daviddoe@strapi.io",
-      "picture": null
+      "avatar": "daviddoe@strapi.io.jpg"
     },
     {
       "name": "Sarah Baker",
       "email": "sarahbaker@strapi.io",
-      "picture": null
+      "avatar": "sarahbaker@strapi.io.jpg"
     }
   ],
   "articles": [
     {
       "title": "The internet's Own boy",
-      "content": "# The Story of Aaron Swartz\n\nAaron Hillel Swartz (November 8, 1986 – January 11, 2013) was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. He was involved in the development of the web feed format RSS, the Markdown publishing format, the organization Creative Commons, and the website framework web.py, and was a co-founder of the social news site [Reddit](https://reddit.com). He was given the title of co-founder of Reddit by Y Combinator owner [Paul Graham](https://en.wikipedia.org/wiki/Paul_Graham_(programmer)) after the formation of Not a Bug, Inc. (a merger of Swartz's project Infogami and Redbrick Solutions, a company run by Alexis Ohanian and Steve Huffman).\n\nSwartz's work also focused on civic awareness and activism. He helped launch the Progressive Change Campaign Committee in 2009 to learn more about effective online activism. In 2010, he became a research fellow at Harvard University's Safra Research Lab on Institutional Corruption, directed by Lawrence Lessig. He founded the online group Demand Progress, known for its campaign against the Stop Online Piracy Act.\n\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/PFQGjEJ9PEc\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\n\nIn 2011, Swartz was arrested by Massachusetts Institute of Technology (MIT) police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet, and setting it to download academic journal articles systematically from JSTOR using a guest user account issued to him by MIT. Federal prosecutors later charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act,[14] carrying a cumulative maximum penalty of $1 million in fines, 35 years in prison, asset forfeiture, restitution, and supervised release.\n\nSwartz declined a plea bargain under which he would have served six months in federal prison. Two days after the prosecution rejected a counter-offer by Swartz, he was found dead in his Brooklyn apartment, where he had hanged himself.\n\nIn 2013, Swartz was inducted posthumously into the [Internet Hall of Fame](https://www.internethalloffame.org//).",
       "slug": "the-internet-s-own-boy",
       "category": {
         "id": 5
@@ -55,20 +72,33 @@
         "id": 1
       },
       "description": "Follow the story of Aaron Swartz, the boy who could change the world",
-      "image": null
-    },
-    {
-      "title": "What's inside a Black Hole",
-      "content": "Well, we don't know yet...",
-      "slug": "what-s-inside-a-black-hole",
-      "category": {
-        "id": 1
-      },
-      "author": {
-        "id": 2
-      },
-      "description": "Maybe the answer is in this article, or not...",
-      "image": null
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Coucou!!!!"
+        },
+        {
+          "__component": "shared.quote",
+          "title": "Thelonius Monk",
+          "body": "You gotta dig to dig it ya dig?"
+        },
+        {
+          "__component": "shared.media",
+          "file": "coffee-art.jpg"
+        },
+        {
+          "__component": "shared.rich-text",
+          "body": "## Coucou!!!!"
+        },
+        {
+          "__component": "shared.slider",
+          "files": [
+            "coffee-art.jpg",
+            "coffee-beans.jpg"
+          ]
+        }
+      ]
     },
     {
       "title": "This shrimp is awesome",
@@ -80,8 +110,34 @@
       "author": {
         "id": 1
       },
-      "description": "Mantis shrimps, or stomatopods, are marine crustaceans of the order Stomatopoda. Some species have specialised calcified \"clubs\" that can strike with great power, while others have sharp forelimbs used to capture prey.",
-      "image": null
+      "description": "Mantis shrimps, or stomatopods, are marine crustaceans of the order Stomatopoda.",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## I'm baby vegan plaid la croix\n\n3 wolf moon fingerstache drinking vinegar gluten-free locavore. Ugh pinterest photo booth scenester, direct trade hella twee cornhole. Literally leggings flexitarian umami waistcoat hexagon 3 wolf moon poke next level roof party vegan fam chia authentic kombucha. Subway tile whatever four loko keffiyeh. Narwhal hoodie cornhole crucifix DIY raw denim mixtape cardigan waistcoat. Chambray viral hexagon, kombucha sustainable tbh wayfarers stumptown franzen hella.\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard [master cleanse](https://strapi.io/) adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips **plaid**.\n\n## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+        },
+        {
+          "__component": "shared.quote",
+          "title": "Thelonius Monk",
+          "body": "You gotta dig to dig it ya dig?"
+        },
+        {
+          "__component": "shared.media",
+          "file": "coffee-art.jpg"
+        },
+        {
+          "__component": "shared.rich-text",
+          "body": "## Coucou!!!!"
+        },
+        {
+          "__component": "shared.slider",
+          "files": [
+            "coffee-art.jpg",
+            "coffee-beans.jpg"
+          ]
+        }
+      ]
     },
     {
       "title": "A bug is becoming a meme on the internet",
@@ -94,7 +150,33 @@
         "id": 2
       },
       "description": "How a bug on MySQL is becoming a meme on the internet",
-      "image": null
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## I'm baby vegan plaid la croix\n\n3 wolf moon fingerstache drinking vinegar gluten-free locavore. Ugh pinterest photo booth scenester, direct trade hella twee cornhole. Literally leggings flexitarian umami waistcoat hexagon 3 wolf moon poke next level roof party vegan fam chia authentic kombucha. Subway tile whatever four loko keffiyeh. Narwhal hoodie cornhole crucifix DIY raw denim mixtape cardigan waistcoat. Chambray viral hexagon, kombucha sustainable tbh wayfarers stumptown franzen hella.\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard [master cleanse](https://strapi.io/) adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips **plaid**.\n\n## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+        },
+        {
+          "__component": "shared.quote",
+          "title": "Thelonius Monk",
+          "body": "You gotta dig to dig it ya dig?"
+        },
+        {
+          "__component": "shared.media",
+          "file": "coffee-art.jpg"
+        },
+        {
+          "__component": "shared.rich-text",
+          "body": "## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+        },
+        {
+          "__component": "shared.slider",
+          "files": [
+            "coffee-art.jpg",
+            "coffee-beans.jpg"
+          ]
+        }
+      ]
     },
     {
       "title": "Beautiful picture",
@@ -107,29 +189,67 @@
         "id": 2
       },
       "description": "Description of a beautiful picture",
-      "image": null
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## I'm baby vegan plaid la croix\n\n3 wolf moon fingerstache drinking vinegar gluten-free locavore. Ugh pinterest photo booth scenester, direct trade hella twee cornhole. Literally leggings flexitarian umami waistcoat hexagon 3 wolf moon poke next level roof party vegan fam chia authentic kombucha. Subway tile whatever four loko keffiyeh. Narwhal hoodie cornhole crucifix DIY raw denim mixtape cardigan waistcoat. Chambray viral hexagon, kombucha sustainable tbh wayfarers stumptown franzen hella.\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard [master cleanse](https://strapi.io/) adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips **plaid**.\n\n## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+        },
+        {
+          "__component": "shared.quote",
+          "title": "Thelonius Monk",
+          "body": "You gotta dig to dig it ya dig?"
+        },
+        {
+          "__component": "shared.media",
+          "file": "coffee-art.jpg"
+        },
+        {
+          "__component": "shared.rich-text",
+          "body": "## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+        },
+        {
+          "__component": "shared.slider",
+          "files": [
+            "coffee-art.jpg",
+            "coffee-beans.jpg"
+          ]
+        }
+      ]
     },
     {
-      "title": "We love Pizza",
-      "content": "We love pizza at Strapi, what about you?",
-      "slug": "we-love-pizza",
+      "title": "What's inside a Black Hole",
+      "slug": "what-s-inside-a-black-hole",
       "category": {
-        "id": 3
-      },
-      "author": {
         "id": 1
       },
-      "description": "Pizza is so delicious, specially four cheese pizza",
-      "image": null
+      "author": {
+        "id": 2
+      },
+      "description": "Maybe the answer is in this article, or not...",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## I'm baby vegan plaid la croix\n\n3 wolf moon fingerstache drinking vinegar gluten-free locavore. Ugh pinterest photo booth scenester, direct trade hella twee cornhole. Literally leggings flexitarian umami waistcoat hexagon 3 wolf moon poke next level roof party vegan fam chia authentic kombucha. Subway tile whatever four loko keffiyeh. Narwhal hoodie cornhole crucifix DIY raw denim mixtape cardigan waistcoat. Chambray viral hexagon, kombucha sustainable tbh wayfarers stumptown franzen hella.\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard [master cleanse](https://strapi.io/) adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips **plaid**.\n\n## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+        },
+        {
+          "__component": "shared.quote",
+          "title": "Thelonius Monk",
+          "body": "You gotta dig to dig it ya dig?"
+        },
+        {
+          "__component": "shared.rich-text",
+          "body": "## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+        },
+        {
+          "__component": "shared.slider",
+          "files": [
+            "coffee-art.jpg",
+            "coffee-beans.jpg"
+          ]
+        }
+      ]
     }
-  ],
-  "global": {
-    "siteName": "Strapi Blog",
-    "defaultSeo": {
-      "metaTitle": "Page",
-      "metaDescription": "A blog made with Strapi",
-      "shareImage": null
-    },
-    "favicon": null
-  }
+  ]
 }

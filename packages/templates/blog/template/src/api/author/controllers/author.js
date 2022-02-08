@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  writer controller
+ *  author controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::writer.writer');
+module.exports = createCoreController('api::author.author');
