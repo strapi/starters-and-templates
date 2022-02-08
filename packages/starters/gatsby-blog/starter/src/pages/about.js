@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlocksRenderer from "../components/blocks-renderer"
+import Headings from "../components/headings"
 
 const AboutPage = () => {
   const { strapiAbout } = useStaticQuery(graphql`
@@ -25,9 +26,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEO seo={seo} />
-      <h1 className="container text-6xl font-bold text-neutral-700">
-        {strapiAbout.title}
-      </h1>
+      <Headings title={strapiAbout.title} />
       <BlocksRenderer blocks={blocks} />
     </Layout>
   )

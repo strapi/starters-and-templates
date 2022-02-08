@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import ArticlesGrid from "../components/articles-grid"
 import SEO from "../components/seo"
+import Headings from "../components/headings"
 
 const IndexPage = () => {
   const { allStrapiArticle, strapiGlobal } = useStaticQuery(graphql`
@@ -22,14 +23,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO />
-      <header className="container mt-8">
-        <h1 className="text-6xl font-bold text-neutral-700">
-          {strapiGlobal.siteName}
-        </h1>
-        <p className="mt-4 text-2xl text-neutral-500">
-          {strapiGlobal.siteDescription}
-        </p>
-      </header>
+      <Headings
+        title={strapiGlobal.siteName}
+        description={strapiGlobal.siteDescription}
+      />
       <main>
         <ArticlesGrid articles={allStrapiArticle.nodes} />
       </main>
