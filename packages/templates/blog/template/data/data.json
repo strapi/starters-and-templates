@@ -15,11 +15,11 @@
       {
         "__component": "shared.quote",
         "title": "Thelonius Monk",
-        "body": "You gotta dig to dig it ya dig?"
+        "body": "You've got to dig it to dig it, you dig?"
       },
       {
         "__component": "shared.rich-text",
-        "body": "Strapi is an amazing Headless CMS."
+        "body": "## Dedit imago conspicuus cum capillis totidem inhibere\n\nLorem markdownum **rerum**, est limine: columbas: ab infelix hostem arbore nudis\ncrudelis. Videtur reliquit ambo ferrum dote sub amne fatis **illuc**, in magis,\nnec."
       },
       {
         "__component": "shared.media",
@@ -76,12 +76,12 @@
       "blocks": [
         {
           "__component": "shared.rich-text",
-          "body": "## Coucou!!!!"
+          "body": "## Probant \n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. \n\n## Abit sua\n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. "
         },
         {
           "__component": "shared.quote",
           "title": "Thelonius Monk",
-          "body": "You gotta dig to dig it ya dig?"
+          "body": "You've got to dig it to dig it, you dig?"
         },
         {
           "__component": "shared.media",
@@ -89,7 +89,7 @@
         },
         {
           "__component": "shared.rich-text",
-          "body": "## Coucou!!!!"
+          "body": "## Spatiantia astra \n\nFoeda, medio silva *errandum*: onus formam munere. Mutata bibulis est auxiliare arces etiamnunc verbis virgineo Priamidas illa Thescelus, nam fit locis lucis auras. Exitus hospes gratulor ut pondere [speslimite](http://www.curas.io/figuram); quid habent, Avernales faciente de. Pervenit Ino sonabile supplex cognoscenti vires, Bacchumque errat miserarum venandi dignabere dedisti. Discrimina iuncosaque virgaque tot sine superest [fissus](http://quos.org/sitet.aspx). Non color esset potest non sumit, sed vix arserat. Nisi immo silva tantum pectusque quos pennis quisquam artus!"
         },
         {
           "__component": "shared.slider",
@@ -102,7 +102,6 @@
     },
     {
       "title": "This shrimp is awesome",
-      "content": "# Badass\n\nMantis shrimps, or stomatopods, are marine crustaceans of the order Stomatopoda. Some species have specialised calcified \"*clubs*\" that can strike with **great power**, while others have sharp forelimbs used to capture prey. They branched from other members of the class Malacostraca around 340 million years ago. Mantis shrimps typically grow to around 10 cm (3.9 in) in length. A few can reach up to 38 cm (15 in). The largest mantis shrimp ever caught had a length of 46 cm (18 in); it was caught in the Indian River near Fort Pierce, Florida, in the United States. A mantis shrimp's carapace (the bony, thick shell that covers crustaceans and some other species) covers only the rear part of the head and the first four segments of the thorax. Varieties range in color from shades of brown to vivid colors, with more than 450 species of mantis shrimps being known. They are among the most important predators in many shallow, tropical and subtropical marine habitats. However, despite being common, they are poorly understood, as many species spend most of their lives tucked away in burrows and holes.\n\nCalled \"sea locusts\" by ancient Assyrians, \"prawn killers\" in Australia, and now sometimes referred to as \"thumb splitters\"—because of the animal's ability to inflict painful gashes if handled incautiously—mantis shrimps have powerful claws that are used to attack and kill prey by spearing, stunning, or dismembering.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/CW8NUCPLE1c\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\nMantis shrimps have, like mantis, ravishing legs. But theirs are so resilient that they inspire the military to make the armor of the future. Above all, their speed and striking power are the responsibility of the superpowers. As the comic book The Oatmeal recounts, the squid's ravishing legs move at the speed of a bullet fired by a 22 caliber and can strike a prey in 1/3000 of a second, with a force of 1,500 Newtons. One tenth of that speed, deployed by a human arm, \"would be enough to send a baseball into orbit.\"\n\nA speed such as it boils water around ravishing legs and creates a shock wave capable of killing a prey missed by the strike.\n\nKept in an aquarium, crustaceans make carnage by dismembering and devouring crabs, shrimps, octopuses, snails and shells (whose shells they break). They would even be able to break the windows of overly fragile aquariums.",
       "slug": "this-shrimp-is-awesome",
       "category": {
         "id": 4
@@ -115,12 +114,12 @@
       "blocks": [
         {
           "__component": "shared.rich-text",
-          "body": "## I'm baby vegan plaid la croix\n\n3 wolf moon fingerstache drinking vinegar gluten-free locavore. Ugh pinterest photo booth scenester, direct trade hella twee cornhole. Literally leggings flexitarian umami waistcoat hexagon 3 wolf moon poke next level roof party vegan fam chia authentic kombucha. Subway tile whatever four loko keffiyeh. Narwhal hoodie cornhole crucifix DIY raw denim mixtape cardigan waistcoat. Chambray viral hexagon, kombucha sustainable tbh wayfarers stumptown franzen hella.\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard [master cleanse](https://strapi.io/) adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips **plaid**.\n\n## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+          "body": "## Probant \n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. \n\n## Abit sua\n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. "
         },
         {
           "__component": "shared.quote",
           "title": "Thelonius Monk",
-          "body": "You gotta dig to dig it ya dig?"
+          "body": "You've got to dig it to dig it, you dig?"
         },
         {
           "__component": "shared.media",
@@ -128,7 +127,7 @@
         },
         {
           "__component": "shared.rich-text",
-          "body": "## Coucou!!!!"
+          "body": "## Spatiantia astra \n\nFoeda, medio silva *errandum*: onus formam munere. Mutata bibulis est auxiliare arces etiamnunc verbis virgineo Priamidas illa Thescelus, nam fit locis lucis auras. Exitus hospes gratulor ut pondere [speslimite](http://www.curas.io/figuram); quid habent, Avernales faciente de. Pervenit Ino sonabile supplex cognoscenti vires, Bacchumque errat miserarum venandi dignabere dedisti. Discrimina iuncosaque virgaque tot sine superest [fissus](http://quos.org/sitet.aspx). Non color esset potest non sumit, sed vix arserat. Nisi immo silva tantum pectusque quos pennis quisquam artus!"
         },
         {
           "__component": "shared.slider",
@@ -141,7 +140,6 @@
     },
     {
       "title": "A bug is becoming a meme on the internet",
-      "content": "It's the story of a user named **Omer Barnir** who reported a bug in 2005 on the MySQL [bug report platform](https://bugs.mysql.com/)\n\nBut the thing is that Omer never got an answer. 15 years later, the bug has never been fix and people are starting to make fun out of it. We let you take a look at the conversation [here](https://bugs.mysql.com/bug.php?id=11472), it's pretty funny",
       "slug": "a-bug-is-becoming-a-meme-on-the-internet",
       "category": {
         "id": 2
@@ -154,12 +152,12 @@
       "blocks": [
         {
           "__component": "shared.rich-text",
-          "body": "## I'm baby vegan plaid la croix\n\n3 wolf moon fingerstache drinking vinegar gluten-free locavore. Ugh pinterest photo booth scenester, direct trade hella twee cornhole. Literally leggings flexitarian umami waistcoat hexagon 3 wolf moon poke next level roof party vegan fam chia authentic kombucha. Subway tile whatever four loko keffiyeh. Narwhal hoodie cornhole crucifix DIY raw denim mixtape cardigan waistcoat. Chambray viral hexagon, kombucha sustainable tbh wayfarers stumptown franzen hella.\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard [master cleanse](https://strapi.io/) adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips **plaid**.\n\n## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+          "body": "## Probant \n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. \n\n## Abit sua\n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. "
         },
         {
           "__component": "shared.quote",
           "title": "Thelonius Monk",
-          "body": "You gotta dig to dig it ya dig?"
+          "body": "You've got to dig it to dig it, you dig?"
         },
         {
           "__component": "shared.media",
@@ -167,7 +165,7 @@
         },
         {
           "__component": "shared.rich-text",
-          "body": "## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+          "body": "## Spatiantia astra \n\nFoeda, medio silva *errandum*: onus formam munere. Mutata bibulis est auxiliare arces etiamnunc verbis virgineo Priamidas illa Thescelus, nam fit locis lucis auras. Exitus hospes gratulor ut pondere [speslimite](http://www.curas.io/figuram); quid habent, Avernales faciente de. Pervenit Ino sonabile supplex cognoscenti vires, Bacchumque errat miserarum venandi dignabere dedisti. Discrimina iuncosaque virgaque tot sine superest [fissus](http://quos.org/sitet.aspx). Non color esset potest non sumit, sed vix arserat. Nisi immo silva tantum pectusque quos pennis quisquam artus!"
         },
         {
           "__component": "shared.slider",
@@ -180,7 +178,6 @@
     },
     {
       "title": "Beautiful picture",
-      "content": "This is an empty blog post with a beautiful picture",
       "slug": "beautiful-picture",
       "category": {
         "id": 4
@@ -193,12 +190,12 @@
       "blocks": [
         {
           "__component": "shared.rich-text",
-          "body": "## I'm baby vegan plaid la croix\n\n3 wolf moon fingerstache drinking vinegar gluten-free locavore. Ugh pinterest photo booth scenester, direct trade hella twee cornhole. Literally leggings flexitarian umami waistcoat hexagon 3 wolf moon poke next level roof party vegan fam chia authentic kombucha. Subway tile whatever four loko keffiyeh. Narwhal hoodie cornhole crucifix DIY raw denim mixtape cardigan waistcoat. Chambray viral hexagon, kombucha sustainable tbh wayfarers stumptown franzen hella.\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard [master cleanse](https://strapi.io/) adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips **plaid**.\n\n## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+          "body": "## Probant \n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. \n\n## Abit sua\n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. "
         },
         {
           "__component": "shared.quote",
           "title": "Thelonius Monk",
-          "body": "You gotta dig to dig it ya dig?"
+          "body": "You've got to dig it to dig it, you dig?"
         },
         {
           "__component": "shared.media",
@@ -206,7 +203,7 @@
         },
         {
           "__component": "shared.rich-text",
-          "body": "## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+          "body": "## Spatiantia astra \n\nFoeda, medio silva *errandum*: onus formam munere. Mutata bibulis est auxiliare arces etiamnunc verbis virgineo Priamidas illa Thescelus, nam fit locis lucis auras. Exitus hospes gratulor ut pondere [speslimite](http://www.curas.io/figuram); quid habent, Avernales faciente de. Pervenit Ino sonabile supplex cognoscenti vires, Bacchumque errat miserarum venandi dignabere dedisti. Discrimina iuncosaque virgaque tot sine superest [fissus](http://quos.org/sitet.aspx). Non color esset potest non sumit, sed vix arserat. Nisi immo silva tantum pectusque quos pennis quisquam artus!"
         },
         {
           "__component": "shared.slider",
@@ -231,16 +228,20 @@
       "blocks": [
         {
           "__component": "shared.rich-text",
-          "body": "## I'm baby vegan plaid la croix\n\n3 wolf moon fingerstache drinking vinegar gluten-free locavore. Ugh pinterest photo booth scenester, direct trade hella twee cornhole. Literally leggings flexitarian umami waistcoat hexagon 3 wolf moon poke next level roof party vegan fam chia authentic kombucha. Subway tile whatever four loko keffiyeh. Narwhal hoodie cornhole crucifix DIY raw denim mixtape cardigan waistcoat. Chambray viral hexagon, kombucha sustainable tbh wayfarers stumptown franzen hella.\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard [master cleanse](https://strapi.io/) adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips **plaid**.\n\n## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+          "body": "## Probant \n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. \n\n## Abit sua\n\nse Lorem markdownum negat. Argo *saxa* videnda cornuaque hunc qui tanta spes teneas! Obliquis est dicenti est salutat ille tamen iuvenum nostrae dolore. - Colores nocituraque comitata eripiunt - Addit quodcunque solum cui et dextram illis - Nulli meus nec extemplo ille ferebat pressit Se blandita fulvae vox gravem Pittheus cesserunt sanguine herbis tu comitum tenuit. Sui in ruunt; Doridaque maculosae fuissem! Et loqui. "
         },
         {
           "__component": "shared.quote",
           "title": "Thelonius Monk",
-          "body": "You gotta dig to dig it ya dig?"
+          "body": "You've got to dig it to dig it, you dig?"
+        },
+        {
+          "__component": "shared.media",
+          "file": "coffee-art.jpg"
         },
         {
           "__component": "shared.rich-text",
-          "body": "## I'm baby vegan plaid la croix\n\nFreegan godard selfies bicycle rights hell of coloring book vice microdosing shoreditch succulents photo booth trust fund. Poke hella synth tilde lomo vinyl green juice shaman. Retro schlitz photo booth tofu taxidermy tumeric farm-to-table keffiyeh fashion axe disrupt. Shaman succulents actually, chillwave knausgaard master cleanse adaptogen shabby chic. Cray sartorial microdosing austin yr iPhone four dollar toast vexillologist wayfarers fashion axe kale chips plaid."
+          "body": "## Spatiantia astra \n\nFoeda, medio silva *errandum*: onus formam munere. Mutata bibulis est auxiliare arces etiamnunc verbis virgineo Priamidas illa Thescelus, nam fit locis lucis auras. Exitus hospes gratulor ut pondere [speslimite](http://www.curas.io/figuram); quid habent, Avernales faciente de. Pervenit Ino sonabile supplex cognoscenti vires, Bacchumque errat miserarum venandi dignabere dedisti. Discrimina iuncosaque virgaque tot sine superest [fissus](http://quos.org/sitet.aspx). Non color esset potest non sumit, sed vix arserat. Nisi immo silva tantum pectusque quos pennis quisquam artus!"
         },
         {
           "__component": "shared.slider",
