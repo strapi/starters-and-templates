@@ -14,6 +14,9 @@ module.exports = {
           {
             singularName: "article",
             queryParams: {
+              publicationState: process.env.GATSBY_IS_PREVIEW
+                ? "preview"
+                : "live",
               populate: {
                 cover: "*",
                 blocks: {
