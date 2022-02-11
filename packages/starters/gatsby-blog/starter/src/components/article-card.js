@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React from "react"
+import { Link, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ArticleCard = ({ article }) => {
   return (
@@ -14,11 +14,13 @@ const ArticleCard = ({ article }) => {
       />
       <div className="px-4 py-4">
         <h3 className="font-bold text-neutral-700">{article.title}</h3>
-        <p className="line-clamp-2 mt-2 text-neutral-500">{article.description}</p>
+        <p className="mt-2 text-neutral-500 line-clamp-2">
+          {article.description}
+        </p>
       </div>
     </Link>
-  );
-};
+  )
+}
 
 export const query = graphql`
   fragment ArticleCard on STRAPI_ARTICLE {
@@ -35,6 +37,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default ArticleCard;
+export default ArticleCard

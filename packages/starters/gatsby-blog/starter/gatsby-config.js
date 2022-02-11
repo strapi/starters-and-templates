@@ -1,53 +1,55 @@
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 
 module.exports = {
   plugins: [
-    'gatsby-plugin-postcss',
+    "gatsby-plugin-postcss",
     {
-      resolve: 'gatsby-source-strapi',
+      resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.STRAPI_API_URL || 'http://localhost:1337',
+        apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
         accessToken: process.env.STRAPI_TOKEN,
         collectionTypes: [
           {
-            singularName: 'article',
+            singularName: "article",
             queryParams: {
-              publicationState: process.env.GATSBY_IS_PREVIEW ? 'preview' : 'live',
+              publicationState: process.env.GATSBY_IS_PREVIEW
+                ? "preview"
+                : "live",
               populate: {
-                cover: '*',
+                cover: "*",
                 blocks: {
-                  populate: '*',
+                  populate: "*",
                 },
               },
             },
           },
           {
-            singularName: 'author',
+            singularName: "author",
           },
           {
-            singularName: 'category',
+            singularName: "category",
           },
         ],
         singleTypes: [
           {
-            singularName: 'about',
+            singularName: "about",
             queryParams: {
               populate: {
                 blocks: {
-                  populate: '*',
+                  populate: "*",
                 },
               },
             },
           },
           {
-            singularName: 'global',
+            singularName: "global",
             queryParams: {
               populate: {
-                favicon: '*',
+                favicon: "*",
                 defaultSeo: {
-                  populate: '*',
+                  populate: "*",
                 },
               },
             },
@@ -55,9 +57,9 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-transformer-remark',
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
   ],
-};
+}

@@ -1,18 +1,18 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import Layout from '../components/layout';
-import BlocksRenderer from '../components/blocks-renderer';
-import Seo from '../components/seo';
+import React from "react"
+import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Layout from "../components/layout"
+import BlocksRenderer from "../components/blocks-renderer"
+import Seo from "../components/seo"
 
 const ArticlePage = ({ data }) => {
-  const article = data.strapiArticle;
+  const article = data.strapiArticle
 
   const seo = {
     metaTitle: article.title,
     metaDescription: article.description,
     shareImage: article.cover,
-  };
+  }
 
   return (
     <Layout as="article">
@@ -30,8 +30,8 @@ const ArticlePage = ({ data }) => {
         <BlocksRenderer blocks={article.blocks || []} />
       </main>
     </Layout>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query ($slug: String) {
@@ -54,6 +54,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default ArticlePage;
+export default ArticlePage
