@@ -24,6 +24,8 @@ The Gatsby frontend server will run here => [http://localhost:3000](http://local
 
 The Strapi backend server will run here => [http://localhost:1337](http://localhost:1337)
 
+You will however need to manually create a full access [API token](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/configurations/optional/api-tokens.html) in Strapi. Once it's created, save it as `STRAPI_TOKEN` in your environment variables.
+
 ## Deploying to production
 
 You will need to deploy the `frontend` and `backend` projects separately. Here are the docs to deploy each one:
