@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import BlocksRenderer from "../components/blocks-renderer"
 import Headings from "../components/headings"
 
@@ -25,7 +25,7 @@ const AboutPage = () => {
 
   return (
     <Layout>
-      <SEO seo={seo} />
+      <Seo seo={seo} />
       <Headings title={strapiAbout.title} />
       <BlocksRenderer blocks={blocks} />
     </Layout>
