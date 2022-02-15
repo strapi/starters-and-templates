@@ -28,5 +28,8 @@
       "email": "hi@strapi.io",
       "url": "https://strapi.io"
     }
-  ]
+  ],
+  "dependencies": {
+    "gatsby-plugin-gatsby-cloud": "^4.7.0"
+  }
 }
