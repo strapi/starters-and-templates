@@ -7504,10 +7504,10 @@ gatsby-source-filesystem@4.5.1:
     valid-url "^1.0.9"
     xstate "^4.26.1"
 
-gatsby-source-strapi@2.0.0-alpha.3:
-  version "2.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-strapi/-/gatsby-source-strapi-2.0.0-alpha.3.tgz#09f710eed7b2845c1965085447a7e9130bcaed91"
-  integrity sha512-SudRx0Ezeenq6D5poHIt/TyTTCyXFDisZRQ51zRsLWhwAJeq/xn8W5ShVYmBgRsqXboV2b8RiLpg7Sz/QhSuKw==
+gatsby-source-strapi@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-strapi/-/gatsby-source-strapi-2.0.0.tgz#026aca563e4d31c1b2e6e8d34ddc78b5866d5fa3"
+  integrity sha512-CBt3UymN44GCzs8BpYtbwbBykxqzL0YIu7JsyUl3tGXldlKdQrM5Cp9zsBtFtaUHWMFxwKVJUMohpdhv+ukL/A==
   dependencies:
     axios "0.24.0"
     commonmark "^0.30.0"

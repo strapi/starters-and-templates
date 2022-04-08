@@ -15,7 +15,8 @@ module.exports = {
           {
             singularName: "article",
             queryParams: {
-              publicationState: process.env.GATSBY_IS_PREVIEW === 'true' ? "preview" : "live",
+              publicationState:
+                process.env.GATSBY_IS_PREVIEW === "true" ? "preview" : "live",
               populate: {
                 cover: "*",
                 blocks: {
