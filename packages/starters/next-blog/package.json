@@ -1,6 +1,6 @@
 {
   "name": "@strapi/starter-next-blog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Strapi blog starter with Next.js",
   "keywords": [
     "strapi",

@@ -1,6 +1,6 @@
 {
   "name": "@strapi/starter-gatsby-blog",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Strapi blog starter with Gatsby",
   "keywords": [
     "strapi",
