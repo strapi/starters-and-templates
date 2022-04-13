@@ -12,8 +12,8 @@ const Image = ({ image, style }) => {
     <NextImage
       // loader={loader}
       layout="responsive"
-      width={width}
-      height={height}
+      width={width || "100%"}
+      height={height || "100%"}
       objectFit="contain"
       src={getStrapiMedia(image)}
       alt={alternativeText || ""}
