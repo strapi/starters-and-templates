@@ -2,7 +2,7 @@
 
 Next starter for creating a blog with Strapi.
 
-![screenshot image](/screenshot.png)
+![screenshot image](./screenshot.png)
 
 This starter allows you to try Strapi with Next with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. So do not hesitate to add new features and report bugs!
 
@@ -50,8 +50,8 @@ You will need to deploy the `frontend` and `backend` projects separately. Here a
 
 Don't forget to setup the environment variables on your production app:
 
-For the frontend the following environment variable is required: 
-- `NEXT_PUBLIC_STRAPI_API_URL`: URL of your Strapi backend, without trailing slash
+For the frontend the following environment variable is required:
 
+- `NEXT_PUBLIC_STRAPI_API_URL`: URL of your Strapi backend, without trailing slash
 
 Enjoy this starter!
