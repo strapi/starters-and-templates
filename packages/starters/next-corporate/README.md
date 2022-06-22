@@ -4,7 +4,7 @@ Next starter for creating a corporate site with Strapi.
 
 [View the live demo](https://strapi-starter-next-corporate.vercel.app/) • [Read the blog post](https://strapi.io/blog/strapi-starter-next-corporate-site)
 
-![screen-website](/screenshot.png)
+![screen-website](./screenshot.png)
 
 This starter is designed for flexibility. Using it, you'll be able to manage your website content entirely in Strapi, and get a Next app automatically generated. Marketing teams will be able to create pages and design their layout without help from developers.
 
@@ -73,7 +73,7 @@ We have built sections for you, but you will likely want to add more to fit your
 We use Tailwind CSS for styling. To modify your page's look, you can edit the theme in `/front/tailwind.config.js`. Read the [Tailwind docs](https://v1.tailwindcss.com/docs/theme) to view all the changes you can make. For example, you can change the primary color like this:
 
 ```js
-const { colors } = require(`tailwindcss/defaultTheme`)
+const { colors } = require(`tailwindcss/defaultTheme`);
 
 module.exports = {
   theme: {
@@ -83,7 +83,7 @@ module.exports = {
       },
     },
   },
-}
+};
 ```
 
 ## Deploying to production
