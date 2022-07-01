@@ -1,0 +1,6 @@
+{
+  "template": {
+    "name": "@strapi/template-ecommerce",
+    "version": "^1.0.0"
+  }
+}
