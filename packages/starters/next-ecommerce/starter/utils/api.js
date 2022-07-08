@@ -17,6 +17,11 @@ export async function getCategories() {
   return categories.data;
 }
 
+export async function getCategory(slug) {
+  const categories = await fetchAPI(`/categories?filters[slug][$eq]=${slug}&populate[products][populate]=image`);
+  return categories.data?.[0];
+}
+
 export async function getProducts() {
   const products = await fetchAPI("/products?populate=image");
   return products.data;
