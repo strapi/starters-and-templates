@@ -19,7 +19,7 @@ const Footer = () => {
           />
         </a>
         <a
-          href="https://github.com/strapi/strapi-starter-next-ecommerce"
+          href="https://github.com/strapi/starters-and-templates"
           className="ml-3"
         >
           <NextImage src="/github.svg" width={20} height={20} alt="GitHub" />
