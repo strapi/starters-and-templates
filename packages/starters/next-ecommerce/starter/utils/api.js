@@ -21,3 +21,8 @@ export async function getProducts() {
   const products = await fetchAPI("/products?populate=image");
   return products.data;
 }
+
+export async function getProduct(slug) {
+  const product = await fetchAPI(`/products?filters[slug][$eq]=${slug}&populate=image`);
+  return product.data?.[0];
+}
