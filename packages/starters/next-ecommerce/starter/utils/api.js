@@ -16,3 +16,8 @@ export async function getCategories() {
   const categories = await fetchAPI("/categories");
   return categories.data;
 }
+
+export async function getProducts() {
+  const products = await fetchAPI("/products?populate=image");
+  return products.data;
+}
