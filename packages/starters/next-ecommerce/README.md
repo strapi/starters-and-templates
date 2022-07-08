@@ -1,8 +1,8 @@
 # Strapi Starter Next.js E-commerce
 
-Next.js starter for creating a simple e-commerce website with Strapi **v4**.
+Next.js starter for creating a simple e-commerce website with Strapi **v4** (corresponding starter with strapi v3: [strapi-starter-next-ecommerce](https://github.com/strapi/strapi-template-ecommerce)).
 
-In case you need the corresponding starter with strapi v3, you can check [strapi-starter-next-ecommerce](https://github.com/strapi/strapi-template-ecommerce).
+![screen-website](./screenshot.png)
 
 This starter allows you to try Strapi with Next.js with the example of a simple e-commerce website where you can buy dev stickers. It is fully customizable and due to the fact that it is open source, fully open to contributions. So do not hesitate to add new features and report bugs!
 
