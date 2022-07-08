@@ -1,7 +1,13 @@
-export default function HomePage() {
+import Head from "next/head"
+
+const HomePage = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <Head>
+        <title>Strapi Next.js E-commerce</title>
+      </Head>
+    </div>
   )
 }
+
+export default HomePage
