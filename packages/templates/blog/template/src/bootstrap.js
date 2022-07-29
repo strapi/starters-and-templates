@@ -23,17 +23,17 @@ async function isFirstRun() {
   return !initHasRun;
 }
 
-async function setPublicPermissions(newPermissions) {
-  // Find the ID of the public role
-  const publicRole = await strapi
+async function setInitPermissions(roleType, newPermissions) {
+  // Find the ID of the role
+  const role = await strapi
     .query("plugin::users-permissions.role")
     .findOne({
       where: {
-        type: "public",
+        type: roleType,
       },
     });
 
-  // Create the new permissions and link them to the public role
+  // Create the new permissions and link them to the role
   const allPermissionsToCreate = [];
   Object.keys(newPermissions).map((controller) => {
     const actions = newPermissions[controller];
@@ -41,13 +41,24 @@ async function setPublicPermissions(newPermissions) {
       return strapi.query("plugin::users-permissions.permission").create({
         data: {
           action: `api::${controller}.${controller}.${action}`,
-          role: publicRole.id,
+          role: role.id,
         },
       });
     });
     allPermissionsToCreate.push(...permissionsToCreate);
   });
   await Promise.all(allPermissionsToCreate);
+}
+
+async function setInitFrontendAPIToken(attributes) {
+  const apiTokenService = strapi.service(`admin::api-token`);
+  const apiToken = await apiTokenService.create(attributes);
+  const accessKey = apiToken.accessKey;
+  const credentialsLocation = process.env.FRONTEND_ENV_LOCATION || "frontend/.env.development"
+  fs.writeFile(credentialsLocation, `STRAPI_TOKEN=${accessKey}`, function (err) {
+    if (err) return console.log(err);
+    console.log('Frontend .env file updated.');
+  });
 }
 
 function getFileSizeInBytes(filePath) {
@@ -229,14 +240,28 @@ async function importAuthors() {
 }
 
 async function importSeedData() {
-  // Allow read of application content types
-  await setPublicPermissions({
+
+  // Initial demo permissions.
+  const initPermissions = {
     article: ["find", "findOne"],
     category: ["find", "findOne"],
     author: ["find", "findOne"],
     global: ["find", "findOne"],
     about: ["find", "findOne"],
-  });
+  }
+
+  // Initialize public permissions.
+  await setInitPermissions("public", initPermissions)
+
+  // Initialize authenticated permissions.
+  await setInitPermissions("authenticated", initPermissions)
+
+  // Creating initial demo API token for the frontend.
+  await setInitFrontendAPIToken({
+    type: 'full-access',
+    name: 'full-access-demo',
+    description: 'Initial frontend demo token'
+  })
 
   // Create all entries
   await importCategories();
