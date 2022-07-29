@@ -54,7 +54,7 @@ async function setInitFrontendAPIToken(attributes) {
   const apiTokenService = strapi.service(`admin::api-token`);
   const apiToken = await apiTokenService.create(attributes);
   const accessKey = apiToken.accessKey;
-  const credentialsLocation = process.env.FRONTEND_ENV_LOCATION || "frontend/.env.development"
+  const credentialsLocation = process.env.FRONTEND_ENV_LOCATION || "../frontend/.env.development"
   fs.writeFile(credentialsLocation, `STRAPI_TOKEN=${accessKey}`, function (err) {
     if (err) return console.log(err);
     console.log('Frontend .env file updated.');
