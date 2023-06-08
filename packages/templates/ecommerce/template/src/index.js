@@ -1,9 +1,9 @@
 "use strict";
 
-const boostrap = require('./bootstrap');
+const bootstrap = require('./bootstrap');
 
 module.exports = {
   async bootstrap() {
-    await boostrap();
+    await bootstrap();
   },
 }
