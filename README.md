@@ -1,3 +1,8 @@
+> [!WARNING]
+> This repository is only compatible with Strapi v4 version<br/>
+> The most recent information can be found at https://docs.strapi.io/
+
+
 # Strapi starters & templates
 
 Monorepo for all official Strapi v4 starters and templates.
